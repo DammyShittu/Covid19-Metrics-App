@@ -17,6 +17,10 @@ export const fetchCountriesFromApi = () => async (dispatch) => {
         name: country.name,
         confirmedCases: country.today_confirmed,
         id: country.id,
+        allDeaths: country.today_deaths,
+        recovered: country.today_recovered,
+        openCases: country.today_open_cases,
+        allRegions: country.regions,
       }
     ));
     dispatch(fetchCountries(oneCountry));
