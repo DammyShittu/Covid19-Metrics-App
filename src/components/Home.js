@@ -42,7 +42,7 @@ const Home = () => {
                 <Link
                   key={id}
                   to={{
-                    pathname: '/details',
+                    pathname: `/details/${name}`,
                     state: {
                       countryName: name,
                       countryId: id,

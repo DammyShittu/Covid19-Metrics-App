@@ -15,8 +15,8 @@ const Details = () => {
 
   return (
     <>
-      <Navbar text={countryName} />
-      <h3>{countryName}</h3>
+      <Navbar text={`${countryName} Covid Stats`} />
+      <h3>{`New Data - ${countryName}`}</h3>
       <h3>{casesConfirmed}</h3>
       <h3>{deaths}</h3>
       <h3>{allRecovered}</h3>

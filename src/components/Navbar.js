@@ -8,7 +8,7 @@ import { MdSettings } from 'react-icons/md';
 const Navbar = ({ text, year }) => (
   <section>
     <div>
-      <Link to="./">
+      <Link to="/">
         <AiOutlineArrowLeft />
       </Link>
       <h1>{year}</h1>

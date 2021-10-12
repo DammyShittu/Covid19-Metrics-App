@@ -9,7 +9,7 @@ const App = () => (
   <Provider store={store}>
     <div className="App">
       <Switch>
-        <Route path="/details">
+        <Route path="/details/:name">
           <Details />
         </Route>
         <Route exact path="/">
