@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=Mali:200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic);
+
+.country-details,
+.details,
+.apology,
+.region-detail {
+  display: flex;
+  align-items: center;
+}
+
+.country-details {
+  width: 95%;
+  margin: 0 auto;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.country-details aside {
+  line-height: 1.8;
+  letter-spacing: 4px;
+}
+
+.country-details aside h2 {
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.details {
+  gap: 25px;
+}
+
+.apology {
+  height: 50vh;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Mali', cursive;
+  font-style: oblique;
+}
+
+.apology,
+.region-name {
+  font-size: 22px;
+}
+
+.regions {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.region-list {
+  list-style: none;
+  padding: 13px 0;
+}
+
+.region-list > div {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.region-list:nth-child(odd) {
+  background: linear-gradient(to bottom, #000428, #004e92);
+}
+
+.region-list:nth-child(even),
+.stats {
+  background: linear-gradient(to right, #2c3e50, #3498db);
+}
+
+.region-detail {
+  justify-content: space-between;
+}
+
+.region-name {
+  line-height: 2;
+}
+
+@media all and (min-width: 1024px) {
+  .country-details {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: start;
+  }
+
+  .covid-img {
+    width: 38%;
+  }
+
+  .country-details aside {
+    width: 50%;
+  }
+
+  .details {
+    gap: 60px;
+  }
+
+  .country-details aside h2 {
+    font-size: 34px;
+    font-weight: 700;
+  }
+
+  .region-detail h3,
+  .country-details aside h3 {
+    font-size: 22px;
+  }
+
+  .apology {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 32px;
+    line-height: 1.8;
+  }
+
+  .stats-name {
+    padding: 10px 20px;
+  }
+
+  .region-name {
+    font-size: 28px;
+  }
+}

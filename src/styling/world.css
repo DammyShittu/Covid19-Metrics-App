@@ -1,0 +1,78 @@
+.world-section {
+  width: 100%;
+  height: auto;
+}
+
+.world {
+  width: 90%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.world > div {
+  width: 100%;
+}
+
+.world-img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.world-section aside h2 {
+  text-transform: uppercase;
+  font-size: 26px;
+}
+
+.world-section aside span {
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+
+@media all and (min-width: 768px) {
+  .world-section aside {
+    line-height: 1.7;
+    font-weight: 700;
+  }
+
+  .world-section aside h2 {
+    text-transform: uppercase;
+    font-size: 29px;
+  }
+
+  .world-section aside span {
+    font-size: 22px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .world {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: start;
+  }
+
+  .world > div {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .world-section aside {
+    height: 150px;
+    align-self: center;
+    width: 25%;
+    margin: 0 auto;
+  }
+
+  .world-section aside h2 {
+    font-size: 35px;
+  }
+
+  .world-section aside span {
+    font-size: 26px;
+  }
+}

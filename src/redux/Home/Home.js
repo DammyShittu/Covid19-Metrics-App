@@ -5,12 +5,18 @@ export const fetchCountries = (payload) => ({
   payload,
 });
 
+let todaysDate = new Date();
+const day = String(todaysDate.getDate()).padStart(2, '0');
+const month = String(todaysDate.getMonth() + 1).padStart(2, '0');
+const year = todaysDate.getFullYear();
+todaysDate = `${year}-${month}-${day}`;
+
 export const fetchCountriesFromApi = () => async (dispatch) => {
-  const countries = await fetch('https://api.covid19tracking.narrativa.com/api/2021-10-11');
+  const countries = await fetch(`https://api.covid19tracking.narrativa.com/api/${todaysDate}`);
   const response = await countries.json();
   if (response) {
-    const date = '2021-10-11';
-    const regions = response.dates[date].countries;
+    const { dates, total } = response;
+    const regions = dates[`${todaysDate}`].countries;
     const countriesArr = Object.values(regions);
     const oneCountry = countriesArr.map((country) => (
       {
@@ -23,7 +29,9 @@ export const fetchCountriesFromApi = () => async (dispatch) => {
         allRegions: country.regions,
       }
     ));
-    dispatch(fetchCountries(oneCountry));
+    const totalConfirmed = total.today_confirmed;
+    const allData = { oneCountry, totalConfirmed };
+    dispatch(fetchCountries(allData));
   }
 };
 
