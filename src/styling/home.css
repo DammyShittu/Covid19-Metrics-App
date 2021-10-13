@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Mali:200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic);
+
+.stats-name {
+  font-size: 19px;
+  padding: 5px 15px;
+  color: #eee;
+  letter-spacing: 3px;
+  font-family: 'Mali', cursive;
+}
+
+.container {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  background: linear-gradient(to right, #2c3e50, #3498db); 
+}
+
+.country-card {
+  border-radius: 4px;
+  cursor: url(../images/hand.png), pointer;
+  transition: 400ms ease-in;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid rgb(90, 89, 89);
+}
+
+.country-card:nth-child(even) {
+  background: linear-gradient(to bottom, #000428, #004e92);
+}
+
+.country-card:hover {
+  transform: scale(0.97);
+  box-shadow: rgba(124, 122, 122, 0.35) 0 5px 15px;
+  border: none;
+}
+
+@media all and (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .country-card:nth-child(even) {
+    background: none;
+  }
+
+  .country-card:nth-child(4n + 2),
+  .country-card:nth-child(4n + 3) {
+    background: linear-gradient(to bottom, #000428, #004e92);
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .container {
+    text-align: start;
+  }
+
+  .stats-name {
+    padding: 10px 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+    width: 95%;
+  }
+}
