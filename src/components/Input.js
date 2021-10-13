@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../styling/input.css';
 
 const Input = ({ filter, onChange }) => (
-  <div>
+  <div className="search">
     <input
       type="text"
       value={filter}
       onChange={onChange}
-      placeholder="Search Country"
+      placeholder="Search Country..."
     />
   </div>
 );
