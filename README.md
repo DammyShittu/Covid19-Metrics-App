@@ -62,7 +62,7 @@ GitHub: [@dammyShittu](https://github.com/DammyShittu/)
 
 Twitter: [@aded_shittu](https://twitter.com/aded_shittu/)
 
-LinkedIn: [Adedamola Shittu](linkedin.com/in/adedamola-shittu-3ab465172/)
+LinkedIn: [Adedamola Shittu](https://www.linkedin.com/in/adedamolashittu/)
 
 # 🤝 Contributing
 
