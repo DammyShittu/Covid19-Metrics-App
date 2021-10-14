@@ -41,6 +41,8 @@ const Home = () => {
                 id,
                 allDeaths,
                 allRegions,
+                recovered,
+                openCases,
               } = country;
               return (
                 <Link
@@ -54,6 +56,8 @@ const Home = () => {
                       casesConfirmed: confirmedCases,
                       deaths: allDeaths,
                       regions: allRegions,
+                      allRecovered: recovered,
+                      casesOpen: openCases,
                     },
                   }}
                 >
