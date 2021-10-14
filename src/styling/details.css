@@ -2,16 +2,15 @@
 
 .country-details,
 .details,
-.apology,
-.region-detail {
+.apology {
   display: flex;
   align-items: center;
 }
 
 .country-details {
   width: 95%;
-  margin: 0 auto;
-  height: 100vh;
+  margin: 60px auto;
+  height: 100%;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
@@ -30,7 +29,8 @@
 }
 
 .details {
-  gap: 25px;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .apology {
@@ -72,7 +72,16 @@
 }
 
 .region-detail {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
+  column-gap: 20%;
+  row-gap: 20px;
+  letter-spacing: 1px;
+}
+
+.end {
+  justify-self: end;
 }
 
 .region-name {
@@ -81,6 +90,7 @@
 
 @media all and (min-width: 1024px) {
   .country-details {
+    height: 100vh;
     flex-direction: row;
     justify-content: space-between;
     text-align: start;
@@ -98,9 +108,20 @@
     gap: 60px;
   }
 
+  .details-top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 5%;
+  }
+
   .country-details aside h2 {
     font-size: 34px;
     font-weight: 700;
+  }
+
+  .region-detail {
+    column-gap: 32%;
   }
 
   .region-detail h3,
