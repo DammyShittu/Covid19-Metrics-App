@@ -1,0 +1,76 @@
+header {
+  width: 100%;
+  background: linear-gradient(to bottom, #000428, #004e92);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.nav,
+.year,
+.settings {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  width: 97%;
+  margin: 0 auto;
+  height: 50px;
+  justify-content: space-between;
+}
+
+.nav h1 {
+  font-size: 17px;
+}
+
+.year {
+  gap: 5px;
+}
+
+.settings {
+  gap: 10px;
+}
+
+.left-arrow {
+  color: #fff;
+  padding-top: 8px;
+}
+
+.icon {
+  cursor: pointer;
+  transition: 400ms ease-in-out;
+}
+
+.icon:hover {
+  opacity: 0.8;
+  color: rgb(140, 56, 56);
+}
+
+@media all and (min-width: 768px) {
+  .nav {
+    width: 97%;
+    margin: 0 auto;
+    height: 80px;
+  }
+
+  .nav h1 {
+    font-size: 22px;
+  }
+
+  .nav span {
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+  }
+
+  .icon {
+    font-size: 18px;
+  }
+
+  .settings {
+    gap: 15px;
+  }
+}
