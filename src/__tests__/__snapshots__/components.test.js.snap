@@ -50,6 +50,84 @@ exports[`All components/pages render correctly CountryData component renders cor
 </li>
 `;
 
+exports[`All components/pages render correctly CountryRegions component renders correctly 1`] = `
+Array [
+  <div
+    className="stats"
+  >
+    <h3
+      className="stats-name"
+    >
+      Stats By Region
+    </h3>
+  </div>,
+  <ul
+    className="regions"
+  />,
+  <h3
+    className="apology"
+  >
+    We apologize!!
+    <br />
+    There is currently no regional data available for 
+    France
+  </h3>,
+]
+`;
+
+exports[`All components/pages render correctly DetailsTop component renders correctly 1`] = `
+<div
+  className="country-details"
+>
+  <img
+    alt="Covid19 Logo"
+    className="covid-img"
+    src="covid.png"
+  />
+  <aside>
+    <h2>
+      Nigeria
+    </h2>
+    <div
+      className="details-top"
+    >
+      <div>
+        <span>
+          Total Confirmed 
+        </span>
+        <h3>
+          7889 cases
+        </h3>
+      </div>
+      <div>
+        <span>
+          Total Deaths
+        </span>
+        <h3>
+          546 cases
+        </h3>
+      </div>
+      <div>
+        <span>
+          Total Recovered
+        </span>
+        <h3>
+          4987 cases
+        </h3>
+      </div>
+      <div>
+        <span>
+          Total Open
+        </span>
+        <h3>
+          2178 cases
+        </h3>
+      </div>
+    </div>
+  </aside>
+</div>
+`;
+
 exports[`All components/pages render correctly Home component renders correctly 1`] = `
 Array [
   <header>

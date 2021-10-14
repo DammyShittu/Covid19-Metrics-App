@@ -8,6 +8,8 @@ import CountryData from '../components/CountryData';
 import Input from '../components/Input';
 import Navbar from '../components/Navbar';
 import World from '../components/World';
+import CountryRegions from '../components/CountryRegions';
+import DetailsTop from '../components/DetailsTop';
 
 describe('All components/pages render correctly', () => {
   test('Home component renders correctly', () => {
@@ -35,12 +37,45 @@ describe('All components/pages render correctly', () => {
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
+
   test('Input component renders correctly', () => {
     const tree = renderer
       .create(
         <Router>
           <Provider store={store}>
             <Input filter="den" onChange={() => {}} />
+          </Provider>
+        </Router>,
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  test('CountryRegions component renders correctly', () => {
+    const tree = renderer
+      .create(
+        <Router>
+          <Provider store={store}>
+            <CountryRegions regions={[]} countryName="France" />
+          </Provider>
+        </Router>,
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  test('DetailsTop component renders correctly', () => {
+    const tree = renderer
+      .create(
+        <Router>
+          <Provider store={store}>
+            <DetailsTop
+              name="Nigeria"
+              confirmed={7889}
+              deaths={546}
+              recovered={4987}
+              open={2178}
+            />
           </Provider>
         </Router>,
       )
