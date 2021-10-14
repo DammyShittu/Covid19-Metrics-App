@@ -4,6 +4,14 @@
 
 > Space Travelers' Hub is single-page application (SPA) that showcases Covid19 data for one hundred and ninety five(195) countries. The data being showcased was fetched from the [Narrativa API](https://covid19tracking.narrativa.com/index_en.html). The fetched data is being displayed in cards on the `Home` page, while data for each country's region is being displayed on the `Details` page. Countries with empty regional data display an informative text to tell users about the unavailable regional data. Every page has a unique route within the SPA.
 
+# Live Link
+
+This [app](https://worlds-covid19.netlify.app/) is being hosted on [Netlify](https://www.netlify.com/)
+
+# Project Presentation
+
+Kindly click [here](https://www.loom.com/share/cf1e3960c0cf4e82a1f03d9536f1b228) to watch the project presentation that was recorded using [Loom](https://www.loom.com)
+
 # Screenshots
 
 ### Width - 1440px
