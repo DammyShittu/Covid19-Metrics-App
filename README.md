@@ -2,7 +2,7 @@
 
 # Covid19 Metrics
 
-> Space Travelers' Hub is single-page application (SPA) that showcases Covid19 data for one hundred and ninety five(195) countries. The data being showcased was fetched from the [Narrativa API](https://covid19tracking.narrativa.com/index_en.html). The fetched data is being displayed in cards on the `Home` page, while data for each country's region is being displayed on the `Details` page. Countries with empty regional data display an informative text to tell users about the unavailable regional data. Every page has a unique route within the SPA.
+> Covid19 Metrics is a single-page application (SPA) that showcases Covid19 data for one hundred and ninety-five(195) countries. The data being showcased was fetched from the [Narrativa API](https://covid19tracking.narrativa.com/index_en.html). The fetched data is being displayed in cards on the `Home` page, while data for each country's region is being displayed on the `Details` page. Countries with empty regional data display an informative text to tell users about the unavailable regional data. Every page has a unique route within the SPA.
 
 # Live Link
 
